@@ -1,0 +1,1062 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+	position: static;
+}
+
+body {
+ /* overflow: hidden; */
+ /* width: 100%; */
+ /* height: 100%; */
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: url(img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*overflow-y: scroll; */
+}
+
+/* Navigation */
+.navigation {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  
+}
+
+.navigation-left {
+  margin-left: -33px;
+}
+
+.navigation-left a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  width: 107px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  transition: all .2s;
+}
+
+.navigation-left a:hover,
+.navigation-left a:focus {
+  border-color: rgb(234, 46, 73);
+  background-color: rgba(44, 45, 47, 0);
+}
+
+.navigation-center {
+  margin-right: 85px;
+}
+
+.navigation-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  background-color: #b8b8b9;
+  width: 97px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  color: #333745;
+  text-transform: uppercase;
+  margin-left: 600px;
+  transition: all .2s;
+  cursor: pointer;
+}
+.login-btn:hover {
+  transform: scale(1.06);
+}
+
+/**NEW STUFF***/
+
+.signup-btn{
+  background-color: #b8b8b9;
+  width: 97px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  color: #333745;
+  text-transform: uppercase;
+  margin-left: 20px;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  transform: scale(1.06);
+}
+
+/* New Stuff**/
+
+/* Slider wrapper*/
+.css-slider-wrapper {
+  display: block;
+  background: #FFF;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-transition: -webkit-transform 1600ms;
+  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Slides Background Color */
+.slide-1 {
+  background-image: url("rest.jpg") ;
+  left: 0;
+}
+.slide-2 {
+  background-image: url("drink.jpeg");
+  left: 100%;
+  background-size: cover;
+}
+.slide-3 {
+  background-image: url("salad.jpg");
+  left: 200%;
+    background-size: cover;
+
+}
+.slide-4 {
+  background-image: url("fish.jpeg");
+  left: 300%;
+    background-size: cover;
+
+}
+.slide-5 {
+  background-image: url("drink.jpeg");
+  left: 400%;
+    background-size: cover;
+
+}
+
+.slider {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider-content {
+  width: 635px;
+  padding-left: 100px;
+}
+
+
+/* Slider Inner Slide Effect */
+.slider h2 {
+  color: #ffffff;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+.slider h4 {
+  font-size: 22px;
+  font-family: "Lato";
+  color: rgba(51, 51, 51, 0.349);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+.slider > img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+.slide-1 > img {
+  right: 0;
+}
+
+.buy-now-btn {
+  background-color: #ea2e49;
+  width: 220px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  text-align: left;
+  padding-left: 35px;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.buy-now-btn:hover {
+  box-shadow: 0px 0px 60px -17px rgba(51,51,51,1);
+}
+
+.buy-now-btn:after {
+  content: 'Buy Now';
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  right: 35px;
+  top: 18px;
+}
+
+.slider .buy-now-btn:focus,
+.navigation .login-btn:focus,.signup-btn:focus {
+  outline: none;
+}
+
+/* Animations */
+.slider h2 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1s; /* Safari */
+  transition-delay: 1s;
+}
+.slider h4 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.4s; /* Safari */
+  transition-delay: 1.4s;
+}
+.slider > img {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.2s; /* Safari */
+  transition-delay: 1.2s;
+}
+
+/* Number Pagination */
+.number-pagination {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  font-family: "Lato";
+  font-weight: bold;
+}
+
+.number-pagination span {
+  font-size: 30px;
+  color: #ea2e49;
+  letter-spacing: 4px;
+}
+
+/*Amount of pages*/
+
+.number-pagination span:after {
+  content: "/5";
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Slider Pagger */
+.slider-pagination {
+  position: absolute;
+  bottom: 30px;
+  width: 575px;
+  left: 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.slider-pagination label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Slider Pagger Event changed --- The little red circle */
+.slide-radio1:checked ~ .slider-pagination .page1,
+.slide-radio2:checked ~ .slider-pagination .page2,
+.slide-radio3:checked ~ .slider-pagination .page3,
+.slide-radio4:checked ~ .slider-pagination .page4, 
+.slide-radio5:checked ~ .slider-pagination .page5 {
+  
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ea2e49;
+  background: transparent;
+}
+
+/* Slider Slide Effect */
+.slide-radio1:checked ~ .slider {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.slide-radio2:checked ~ .slider {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.slide-radio3:checked ~ .slider {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+.slide-radio4:checked ~ .slider {
+  -webkit-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+.slide-radio5:checked ~ .slider {
+  -webkit-transform: translateX(-400%); /*Dkljlajlk*/
+  transform: translateX(-400%);
+}
+
+.slide-radio1:checked ~ .slide-1 h2,
+.slide-radio2:checked ~ .slide-2 h2,
+.slide-radio3:checked ~ .slide-3 h2,
+.slide-radio4:checked ~ .slide-4 h2,
+.slide-radio5:checked ~ .slide-5 h2,
+
+.slide-radio1:checked ~ .slide-1 h4,
+.slide-radio2:checked ~ .slide-2 h4,
+.slide-radio3:checked ~ .slide-3 h4,
+.slide-radio4:checked ~ .slide-4 h4,
+.slide-radio5:checked ~ .slide-5 h4,
+
+/*Slider letters on images*/
+
+.slide-radio1:checked ~ .slide-1 > img,
+.slide-radio2:checked ~ .slide-2 > img,
+.slide-radio3:checked ~ .slide-3 > img,
+.slide-radio4:checked ~ .slide-4 > img,
+.slide-radio5:checked ~ .slide-5 > img 
+
+{
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .slider h2 {
+    font-size: 20px;
+  }
+  .slider h4 {
+    font-size: 16px;
+  }
+
+  .slider-content {
+    padding: 0 2%
+  }
+
+  .navigation {
+    padding: 0 2%;
+  }
+
+  .navigation-left {
+    display: none;
+  }
+
+  .number-pagination {
+    right: 2%;
+  }
+  .slider-pagination {
+    left: 2%;
+  }
+
+  .slider .buy-now-btn {
+    padding: 0 15px;
+    width: 175px;
+    height: 42px;
+  }
+
+  .slider .buy-now-btn:after {
+    top: 15px;
+  }
+
+  .slider > img {
+    right: 2%;
+  }
+
+  .slide-1 > img {
+    right: -110px;
+  }
+}
+
+/*-----------------CSS FOR About Us----------------*/
+/*
+ul 
+{
+ position: fixed;
+ top:50%;
+ left:96%;
+ transform: translateY(-50%);
+ margin: 0;
+ padding: 0;
+ z-index: 1;
+ 
+}
+
+ul li
+{
+	list-style: none;
+}
+
+/* Controls the property of the in page links 
+
+ul li a
+{
+  display: block;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  background: #fff;
+  width: 4px;
+  color: #262626;
+  margin: 4px 0;
+  padding-left:15px;
+  text-transform: uppercase;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+ul li a:hover
+{
+	background: #262626;
+	color: #fff;
+}
+
+/* Gives the ability to scroll smoothly once implemented into container
+
+#container
+{
+	width:100%;
+	height:100vh;
+	scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+#container div
+{
+	position:relative;
+	width:100%;
+	height: 100%;
+} 
+
+#container div h1
+{
+	position: absolute;
+	top: 50%;
+	transform: TranslateY(-50%);
+	width: 100%;
+	text-align: center;
+	padding:0;
+	font-size: 8em;
+	text-transform: uppercase;
+	color:#fff ;
+}
+#container div#red
+{
+	background: red;
+}
+
+#container div#green
+{
+	background: green;
+}
+
+#container div#yellow
+{
+	background: yellow;
+}
+
+#container div#blue
+{
+	background: blue;
+}
+
+#container div#magenta
+{
+	background: magenta;
+}
+
+
+*/
+/* ---------------------------------- CSS For About us -------------------------------------*/
+
+/*Removes the numbers from ordered list*/
+/*
+ol li{
+  list-style-type: none; 
+}
+
+/*
+.fancybar 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 0 0 0 100px;
+	box-sizing: border-box;
+	transition: .5;
+	
+}
+
+.fancybar .channel
+{
+	position: relative;
+}
+
+.fancybar ol
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	float: right; /* Check this line later 
+	background: rgba(0,0,0,.5);
+}
+
+.fancybar ol li
+{
+	list-style: none;
+	line-height: 80px;
+	text-align: center;
+}
+
+.fancybar ol li a
+{
+	display: block;
+	padding: 0 30px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+    font-weight: bold;
+	font-size: 16px;
+}
+
+.fancybar ol li a:hover
+{
+	background: #fd2928;
+	color: #fff;
+	transition: .5s; /*
+}
+*/
+/*
+section
+{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+/*The literal parallax*/
+
+section.sec1
+{
+	background: url(drink.jpeg);
+	background-size: cover; /******* MAGIC*******/
+	background-attachment: fixed; /*** LITERALLY THE PARA INSTA MAKER****/
+}
+
+section.sec2
+{
+	padding: 100px;
+	height: auto;
+}
+
+section.sec2 h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 60px;
+	color: #262626;
+}
+
+section.sec2 p
+{
+	font-size: 18px;
+}
+
+section.sec3
+{
+	background: url(burgers_food.jpeg);
+	background-size: cover; /******* MAGIC*******/
+	background-attachment: fixed; /*** LITERALLY THE PARA INSTA MAKER****/
+}
+
+/****************CSS FOR LOG IN*******************/
+
+.loginBox
+{
+  position: absolute;
+  top:53%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  min-height: 400px;
+  background: #fff; 
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+}
+
+.icon 
+{
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+h3
+{
+   margin: 0;
+   padding: 0 0 20px;
+   color: #262626;
+   text-align: center;
+}
+
+.loginBox input
+{
+  width: 100%;
+  margin-bottom: 20px
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 40px;
+  color: #262626;
+  padding-left: 20px;
+  box-sizing: border-box; 
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus
+{
+  border-bottom: 2px solid #f00;
+}
+
+.inputBox
+{
+  position: relative;
+}
+
+.inputBox span
+{
+  position: absolute;
+  top: 10px;
+  color: #262626;
+}
+
+.loginBox input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  background: #ed292a;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.loginBox a
+{
+  color: #262626;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.error
+{
+  position: relative;
+  animation: shake 0.2s;
+}
+
+@keyframes shake
+{
+  0%,100%
+  {
+   left: 0%;
+  }
+  20%,80%
+  {
+    left:-15px;
+  }
+
+  40%,60%
+  {
+    left: 15px;
+  }
+  
+}
+
+
+/*************************CSS FOR Nex navbar************************/
+ol li{
+  list-style-type: none; 
+}
+
+sticky-bar
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 100px;
+  transition: .5s;
+}
+
+sticky-bar .logo
+{
+  float:left;
+}
+
+sticky-bar .logo img
+{
+  height: 80px;
+  transition: .5s;
+}
+
+sticky-bar ol
+{
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+sticky-bar ol li
+{
+  list-style: none;
+}
+
+sticky-bar ol li a
+{
+  list-style: 80px;
+  color: #262626;
+  padding: 2px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+/*************************/
+.container
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 700px;
+  height: 420px;
+  border-radius: 5px;
+  border: 10px solid rgba(255,255,255,.2);
+  box-shadow: 10px 10px 15px rgba(0,0,0,.5);
+}
+
+.imgBox
+{
+  width: 330px;
+  height: 420px;
+  overflow: hidden;
+  float: left;
+}
+
+.imgBox img
+{
+   width: 100%;
+}
+
+.SignUpBox
+{
+  float: right;
+  position: absolute;
+  left: 48.7%;
+  top: 0%;
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  float:right;
+  background: rgba(255,255,255,.8); 
+  box-sizing: border-box;
+  padding: 60px 40px;
+}
+
+h3
+{
+  margin: 0;
+  padding: 0 0 20px;
+  color: #262626;
+}
+
+.SignUpBox input
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.SignUpBox input[type="text"],
+.SignUpBox input[type="email"],
+.SignUpBox input[type="password"]
+{
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 20px;
+  color: #262626;
+  background: transparent;
+  font-size: 16px;
+  box-sizing: border-box; 
+}
+
+.SignUpBox input[type="text"]:focus,
+.SignUpBox input[type="password"]:focus,
+.SignUpBox input[type="email"]:focus
+{
+  border-bottom: 2px solid #f00;
+}
+
+::placeholder
+{
+  color: rgba(0,0,0,.5);
+}
+
+.SignUpBox input[type = "submit"]
+{
+   border: none;
+   outline: none;
+   height: 40px;
+   font-size: 16px;
+   background: #ed292a;
+   color: #fff;
+   border-radius: 20px;
+   cursor: pointer; 
+}
+
+.SignUpBox a
+{
+  color: #262626;
+  font-size: 14px;
+  font-weight: bold; 
+}
+
+/**************CONTACT**********************/
+
+.wrapper
+{
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5); 
+}
+
+.wrapper h2
+{
+  color: #666;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.input-field
+{
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.input-field input ,
+.input-field textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #666;
+  font-size: 16px;
+  color: #666; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.input-field label
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  font-size: 16px;
+  color: #666;
+  font-weight:700;
+  transition: 0.5s;
+}
+
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+
+.input-field input:valid + label,
+.input-field textarea:valid + label
+{
+  top: -25px;
+  font-size: 14px;
+  padding: 2px 5px;
+  background: #ff006a;
+  color: #fff;
+  border-radius: 4px ;
+}
+
+.btn1
+{
+  margin-top:20px;
+  background: #ff006a;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.5s;
+  float: right;
+}
+
+/************************************************
+ NAVBAR FOR THINGS LIKE SIGN IN, SIGN UP, CONTACT 
+************************************************/
+
+ani-nav
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  padding: 1px 10px;
+  box-sizing: border-box;
+  transition: .5s; 
+
+
+}
+
+ani-nav .logo
+{
+  float: left;
+}
+
+ani-nav .logo img
+{
+  height: 60px;
+  transition: .5s;
+}
+
+ani-nav ol
+{
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ani-nav ol li
+{
+  list-style: none;
+  text-decoration: none;
+}
+
+ani-nav ol li a
+{
+  line-height: 80px;
+  color: #262626;
+  padding: 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+/** NOW REACH HERE**/
+
+ani-nav ol li a.active,
+ani-nav ol li a:hover
+{
+  color: #fff;
+  background: #f00;
+   text-decoration: none; 
+}
